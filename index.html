@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <form id="studentForm">
+            <label for="fullName">
+                Full Name
+            </label>
+            <input
+                type="text"
+                id="fullName"
+                required
+            >
+
+
+            <label for="email">
+                Email
+            </label>
+
+
+            <input
+                type="email"
+                id="email"
+                required
+            >
+
+
+            <label for="course">
+                Course
+            </label>
+
+
+            <select id="course" required>
+                <option value="">
+                    Select a course
+                </option>
+                <option value="Cloud Engineering">
+                    Cloud Engineering
+                </option>
+                <option value="DevOps Engineering">
+                    DevOps Engineering
+                </option>
+                <option value="Azure Administration">
+                    Azure Administration
+                </option>
+            </select>
+
+
+            <button type="submit">
+                Register
+            </button>
+        </form>
+
+
+        <p id="message"></p>
+
+
+        <hr>
+
+
+        <h2>Registered Students</h2>
+
+
+        <button id="loadStudents">
+            Load Students
+        </button>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                </tr>
+            </thead>
+            <tbody id="studentsTable">
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

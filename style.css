@@ -1,0 +1,225 @@
+/* ================================
+   GENERAL PAGE STYLING
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eef4ff, #f8fbff);
+    color: #1f2937;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+/* ================================
+   MAIN CONTAINER
+================================ */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================
+   HEADINGS
+================================ */
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+h2 {
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+/* ================================
+   FORM
+================================ */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+label {
+    font-weight: 600;
+    margin-top: 8px;
+    color: #374151;
+}
+
+
+/* ================================
+   INPUTS & SELECT
+================================ */
+input,
+select {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #ffffff;
+    transition: 0.3s ease;
+}
+
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 13px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+form button {
+    background: #2563eb;
+    color: white;
+    margin-top: 15px;
+}
+
+
+form button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+#loadStudents {
+    background: #111827;
+    color: white;
+    margin-bottom: 20px;
+}
+#loadStudents:hover {
+    background: #374151;
+}
+
+
+/* ================================
+   MESSAGE
+================================ */
+#message {
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+
+
+
+/* ================================
+   HORIZONTAL LINE
+================================ */
+hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 35px 0;
+}
+
+
+/* ================================
+   TABLE
+================================ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+thead {
+    background: #2563eb;
+    color: white;
+}
+
+
+th,
+td {
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+th {
+    font-weight: 600;
+}
+
+
+tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+
+tbody tr:hover {
+    background: #eff6ff;
+}
+
+
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+
+@media (max-width: 700px) {
+
+
+    body {
+        padding: 20px 10px;
+    }
+
+
+    .container {
+        padding: 25px 18px;
+    }
+
+
+    h1 {
+        font-size: 26px;
+    }
+    table {
+        font-size: 13px;
+    }
+    th,
+    td {
+        padding: 10px 7px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        padding: 20px 15px;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
