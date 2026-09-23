@@ -137,6 +137,14 @@
               "value": "[parameters('sqlAdminLogin')]"
             },
             {
+  "name": "WEBSITE_NODE_DEFAULT_VERSION",
+  "value": "~20"
+},
+{
+  "name": "AzureWebJobsFeatureFlags",
+  "value": "EnableWorkerIndexing"
+}
+            {
               "name": "DB_PASSWORD",
               "value": "[parameters('sqlAdminPassword')]"
             },
